@@ -7,7 +7,7 @@ import { selectGenreListId } from '../redux/features/playerSlice';
 const Discover = () => {
   const dispatch = useDispatch();
   const { activeSong, isPlaying, genreListId } = useSelector((state) => state.player);
-  const { data, isFetching, error } = useGetSongsByGenreQuery(genreListId || 'HIP-HOP');
+  const { data, isFetching, error } = useGetSongsByGenreQuery(genreListId || 'POP');
 
   if (isFetching) return <Loader title="Loading songs...." />;
 
