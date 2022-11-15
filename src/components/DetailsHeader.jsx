@@ -8,10 +8,10 @@ const DetailsHeader = ({ artistId, artistData, songData }) => {
       <div className="absolute inset-0 flex items-center">
         <img
           src={
-						artistId
-						  ? artist?.artwork?.url.replace('{w}', '500').replace('{h}', '500')
-						  : songData?.images?.coverart
-					}
+					  artistId
+					  ? artist?.artwork?.url.replace('{w}', '500').replace('{h}', '500')
+					   : songData?.images?.coverart
+					  }
           alt="art"
           className="sm:w-48 w-28 sm:h-48 h-28 rounded-full object-cover border-2  shadow-[#293726] shadow-xl"
         />
